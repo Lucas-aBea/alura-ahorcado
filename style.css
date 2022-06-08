@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+}
+
+h1{
+   position: absolute;
+   top: 50px;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.introductionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    font-size: 2em;
+}
+.introductionContainer input{
+    width: 200px;
+    height: 60px;
+    font-size: 2em;
+    text-align: center;
+    border: 3px solid rgb(68, 143, 156);
+    background-color: rgba(169, 235, 235, 0.603);
+    color: white;
+    
+}
+.introductionContainer button{
+    width: 100px;
+    height: 40px;
+    border-style:none;
+    background-color: rgba(108, 207, 207, 0.603);
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+.gameContainer button{
+    width: 100px;
+    height: 40px;
+    border-style:none;
+    background-color: rgba(108, 207, 207, 0.603);
+} 
+.gameContainer input{
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: 5em;
+    text-align: center;
+    border: 3px solid rgb(68, 143, 156);
+    background-color: rgba(169, 235, 235, 0.603);
+    color: white;
+}
+#errorInput{
+    color: red;
+    position: relative;
+    left: 300px;
+    bottom: 55px;
+    font-size: 2em;
+}
+
+.gameContainer input:focus{
+    border: 3px solid rgb(68, 143, 156);
+}
+
+.endGameContainer{
+    position: absolute;
+    font-size: 2em;
+    top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height:400px;
+    text-align: center;
+}
+.endGameContainer button{
+    width: 100px;
+    height: 40px;
+    border-style:none;
+    background-color: rgba(108, 207, 207, 0.603);
+}
+
+.palabraSecreta{
+    text-align: center;
+    font-size: 3em;
+    position: absolute;
+    top: 300px;
+    left: 870px;
+}
+.usadas{
+    font-size: 3em;
+    position: absolute;
+    min-width: 200px;
+    min-height: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: "white";
+    top: 300px;
+    left: 1200px;
+}
+
+.background{
+    position: absolute;
+    background-color: rgb(15, 5, 51);
+    z-index: -1;
+}
+
+.noMostrar{
+    display: none;
+}
+
+.cadalso{
+    position:absolute;
+    left:400px;
+    top: 200px;
+   height: 300px;
+   width: 300px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: "white";
+}
+p{
+    margin: 5px;
+}

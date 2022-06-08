@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="container">
+    <h1><img src="Vector.png">horcado</h1>
+    <canvas class="background" id="background"></canvas>
+    <canvas class="cadalso noMostrar" id="cadalso"></canvas>
+    <div class="introductionContainer" id="introductionContainer">
+        <label for="agregarPalabra">Agregar Palabra (opcional)</label>
+        <input 
+            type="text" 
+            name="agregarPalabraInput"
+            id="agregarPalabraInput">
+
+        <button id="iniciarJuego">Iniciar Juego</button>
+    </div>
+
+    <div class="gameContainer  noMostrar" id="gameContainer">
+        
+        <input 
+            type="text"
+            id="agregarLetra"
+            >
+        <p id="errorInput"></p>
+        <button id="intentar">intentar</button>
+        <p id="palabraSecreta" class="palabraSecreta"></p>
+        <p id="usadas" class="usadas"></p>
+    </div>
+
+    <div class="endGameContainer noMostrar" id="endGameContainer">
+        <h3 id="mensajeFinal"></h3>
+        <button class="playAgain" id="playAgain">Play Again</button>
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
